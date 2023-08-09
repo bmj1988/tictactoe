@@ -1,1 +1,72 @@
-/* Your code here */
+body {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#winner {
+    background-color: blue;
+    font-size: larger;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+#game {
+    display: grid;
+    grid-template-columns: repeat(3, 75px);
+    grid-template-rows: repeat(3, 75px);
+    grid-template-areas:
+    "square-0 square-1 square-2"
+    "square-3 square-4 square-5"
+    "square-6 square-7 square-8";
+    justify-content: center;
+
+
+}
+#square-0 {
+    grid-area: 'square-0';
+    border-bottom: 1px solid black;
+}
+
+#square-1 {
+    grid-area: 'square-1';
+    border-bottom: 1px solid black;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+}
+#square-2 {
+    grid-area: 'square-2';
+    border-bottom: 1px solid black;
+}
+#square-3 {
+    grid-area: 'square-3';
+}
+#square-4 {
+    grid-area: 'square-4';
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+}
+#square-5 {
+    grid-area: 'square-5';
+}
+#square-6 {
+    grid-area: 'square-6';
+    border-top: 1px solid black;
+}
+#square-7 {
+    grid-area: 'square-7';
+    border-top: 1px solid black;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+}#square-8 {
+    grid-area: 'square-8';
+    border-top: 1px solid black;
+}
+#buttons {
+ display: flex;
+ justify-content: space-around;
+
+}
+
+button {
+    border: 2px solid black;
+    padding: 5px 10px;
+}
