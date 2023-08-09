@@ -1,11 +1,16 @@
 // Your code here
-let marker = "https://assets.aaonline.io/Module-DOM-API/formative-project-tic-tac-toe/player-x.svg"
+let markerX = "https://assets.aaonline.io/Module-DOM-API/formative-project-tic-tac-toe/player-x.svg"
+let markerO = "https://assets.aaonline.io/Module-DOM-API/formative-project-tic-tac-toe/player-o.svg"
 let clickCounter = 1;
+//track marker
+//if marker === marker x add id to div with value of markerx
+
+let marker = markerX;
 const mark = function(){
    if(clickCounter % 2){
-      marker = "https://assets.aaonline.io/Module-DOM-API/formative-project-tic-tac-toe/player-o.svg"
+      marker = markerO;
    } else {
-      marker = "https://assets.aaonline.io/Module-DOM-API/formative-project-tic-tac-toe/player-x.svg"
+      marker = markerX;
    }
    clickCounter ++;
 };
